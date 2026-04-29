@@ -14,7 +14,7 @@ A avaliação experimental foi conduzida em duas frentes. Na primeira, voltada �
 
 Este repositório inclui instruções de acesso e utilização do MVPv1 funcional da plataforma GT IoTEdu, permitindo explorar o ciclo completo de gestão e segurança de dispositivos IoT em ambientes institucionais. A demo online (disponível em mvp.iotedu.org)oferece acesso a diferentes perfis (superadmin, admin e usuário), com dados reais emulados, incluindo cadastro de dispositivos, monitoramento, alertas de segurança e bloqueios automatizados.
 
-👉 Veja o passo a passo completo da demo em DEMO.md
+👉 Veja o passo a passo completo da demo em [DEMO.md](/DEMO.md)
 
 ---
 
