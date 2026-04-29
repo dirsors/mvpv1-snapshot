@@ -10,73 +10,27 @@ A avaliação experimental foi conduzida em duas frentes. Na primeira, voltada �
 
 ---
 
-# 🌐 Guia de Demonstração Online
+Demo Online (MVPv1)
 
-A plataforma oferece uma **instância de demonstração funcional** em [https://mvp.iotedu.org/](https://mvp.iotedu.org/) com dados pré-configurados, permitindo explorar todos os recursos sem necessidade de instalação local.
+Este repositório inclui instruções de acesso e utilização do MVPv1 funcional da plataforma GT IoTEdu, permitindo explorar o ciclo completo de gestão e segurança de dispositivos IoT em ambientes institucionais. A demo online (disponível em mvp.iotedu.org)oferece acesso a diferentes perfis (superadmin, admin e usuário), com dados reais emulados, incluindo cadastro de dispositivos, monitoramento, alertas de segurança e bloqueios automatizados.
 
-## 🔐 Acesso e Credenciais
-
-A demo utiliza **dois IdPs redundantes** para garantir disponibilidade:
-- **IdP IoTEdu:** `https://idp.iotedu.org`
-- **IdP AnonShield:** `https://idp.anonshield.org` (fallback)
-
-Todos os usuários compartilham a senha: **`iotedu`**
-
-| Usuário | Perfil | Descrição |
-|---------|--------|-----------|
-| `superuser@iotedu.org` | Superadmin | Gestão global de instituições, unidades e permissões |
-| `admin@iotedu.org` | Admin | Operação diária de uma unidade: aprovação, bloqueio e incidentes |
-| `user1` / `iotedu` | Usuário | Dispositivos LIBERADOS — monitoramento operacional |
-| `user2` / `iotedu` | Usuário | Dispositivos BLOQUEADOS — visualização de transparência de bloqueios |
-| `user3` / `iotedu` | Usuário | Dispositivos AGUARDANDO — novo ciclo de vida |
-| `user4` / `iotedu` | Usuário | Múltiplos estados — dois liberados e dois bloqueados |
-
-## 📊 Dados Pré-configurados
-
-A demo inclui:
-- **Instituição:** Unipampa
-- **Unidades:** Alegrete (IPs 192.168.56.10–50) e Bagé (IPs 192.168.56.60–90)
-- **Integrações:** pfSense, Zeek, Suricata, Snort com aliases e sincronização automática
-- **Ataques simulados:** PortScan, SYN Flood, ICMP Tunnel, SQL Injection, Brute Force, DDoS
-- **Estados de dispositivos:** LIBERADO, BLOQUEADO, AGUARDANDO com histórico completo
-
-## 🎯 O que Explorar
-
-**Perfil Superadmin:**
-- Dashboard administrativo com visão geral de usuários e unidades
-- Cadastro de novas instituições e unidades
-- Gerenciamento global de permissões
-
-**Perfil Admin:**
-- Lista de dispositivos com filtros por IP, MAC, status
-- Mapeamento de aliases pfSense (PASS/BLOCK)
-- Incidentes de segurança (Zeek, Suricata, Snort) com stream ativo
-- Histórico de bloqueios (administrativos vs. feedback de usuários)
-- Health check das integrações de rede
-
-**Perfil Usuário:**
-- Cadastro de novos dispositivos IoT
-- Monitoramento em tempo real
-- Transparência de bloqueios com detalhes de motivo e responsável
-- Ciclo de vida completo: AGUARDANDO → LIBERADO → BLOQUEADO
-
-Consulte o **[Guia Completo da Demo (DEMO.md)](./DEMO.md)** para passo-a-passo detalhado de cada perfil e funcionalidade.
+👉 Veja o passo a passo completo da demo em DEMO.md
 
 ---
-# Estrutura do README.md
 
-Este README.md está organizado nas seguintes seções:
+# Estrutura do Restante do README.md
 
-1. **Título e Resumo:** Título do projeto, objetivo do artefato e resumo. 
-2. **Guia de Demonstração:** Exploração interativa da plataforma com dados pré-configurados.
-3. **Estrutura do README.md:** A presente estrutura.
-4. **Informações básicas:** Descrição dos componentes e requisitos mínimos para a execução do experimento.
-5. **Dependências:** Informação sobre as dependências necessárias.
-6. **Preocupações com segurança:** Lista das considerações e preocupações com a segurança.
-7. **Instalação:** Instruções para instalação e configuração do sistema.
-8. **Teste mínimo:** Instruções para a execução de um teste mínimo.
-9. **Teste completo:** Instruções para a execução de testes completos.
-10. **Licença:** Informações sobre a licença do projeto.
+O restante deste README.md está dedicado ao deploy da infraestrutura virtualizada, pensado para testes em uma máquina local.
+
+O restante deste documento está organizado nas seguintes seções:
+
+1. **Informações básicas:** Descrição dos componentes e requisitos mínimos para a execução do experimento.
+2. **Dependências:** Informação sobre as dependências necessárias.
+3. **Preocupações com segurança:** Lista das considerações e preocupações com a segurança.
+4. **Instalação:** Instruções para instalação e configuração do sistema.
+5. **Teste mínimo:** Instruções para a execução de um teste mínimo.
+6. **Teste completo:** Instruções para a execução de testes completos.
+7. **Licença:** Informações sobre a licença do projeto.
 
  ---
 
